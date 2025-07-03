@@ -1,7 +1,7 @@
 # microservice-client-zeromq
 
 **WSJ Up/Down Volume Percentage Calculator (Client Microservice)**  
-A command-line Python client that communicates via ZeroMQ to a microservice server. It retrieves stock volume data from the Wall Street Journal and calculates the Up and Down Volume percentages for both NYSE and NASDAQ.
+A command-line Python client that communicates via ZeroMQ to a microservice server. It retrieves stock volume data from the Wall Street Journal website and calculates the Up and Down Volume percentages for both NYSE and NASDAQ.
 
 ## Overview
 
@@ -56,7 +56,7 @@ Make sure the server microservice is running and listening on port `5555`. This 
 
 ### 3. Run the Client
 
-python client_volume_cli.py
+python Fix***.py
 ```
 
 You’ll be presented with a command-line menu. Choose any of the options to retrieve and analyze stock volume data.
@@ -66,7 +66,7 @@ You’ll be presented with a command-line menu. Choose any of the options to ret
 ## File Structure
 
 - microservice-client-zeromq/
-  - client_volume_cli.py       # Main client CLI application (renamed from prompt_030824_v03.py)
+  - Fix***.py       # Main client CLI application (renamed from prompt_030824_v03.py)
   - requirements.txt           # Project dependencies
   - README.md                  # Project overview and instructions
   - docs/
