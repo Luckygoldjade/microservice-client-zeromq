@@ -1,7 +1,12 @@
-# microservice-client-zeromq
+# Academic project completed in Winter 2024
+
+## Project Title: microservice-client-zeromq
 
 **WSJ Up/Down Volume Percentage Calculator (Client Microservice)**  
 A command-line Python client that communicates via ZeroMQ to a microservice server. It retrieves stock volume data from the Wall Street Journal website and calculates the Up and Down Volume percentages for both NYSE and NASDAQ.
+
+This repository contains my independent copy of a collaborative academic project completed as part of the
+Computer Science program.
 
 ## Overview
 
@@ -13,6 +18,13 @@ This microservice client was designed to:
 - Serve as a data visualization and analysis tool using scraped financial data.
 
 This project demonstrates asynchronous communication, microservice principles, and modular CLI design using Python.
+
+---
+
+## Collaborators
+
+This project was originally developed in collaboration with teammate Jacky K, and myself. This repo is
+personalized, independently maintained version created for portfolio and resume.
 
 ---
 
