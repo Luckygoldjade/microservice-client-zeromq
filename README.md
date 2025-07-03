@@ -50,13 +50,18 @@ _Fix***_
 pip install -r requirements.txt
 ```
 
-### 2. Start the Server (in separate terminal)
+### 2. Start the Client in separate terminal
 
 Make sure the server microservice is running and listening on port `5555`. This project assumes the server is on `tcp://localhost:5555`.
 
 ### 3. Run the Client
 
-python Fix***.py
+python microservice-client-zeromq.py
+
+### 4. Run the Server in separate terminal
+
+python server_zeromq_wsj_volume_provider
+
 ```
 
 You’ll be presented with a command-line menu. Choose any of the options to retrieve and analyze stock volume data.
@@ -66,9 +71,9 @@ You’ll be presented with a command-line menu. Choose any of the options to ret
 ## File Structure
 
 - microservice-client-zeromq/
-  - Fix***.py       # Main client CLI application (renamed from prompt_030824_v03.py)
-  - requirements.txt           # Project dependencies
-  - README.md                  # Project overview and instructions
+  - microservice-client-zeromq.py       # Main client CLI application (renamed from prompt_030824_v03.py)
+  - requirements.txt                    # Project dependencies
+  - README.md                           # Project overview and instructions
   - docs/
     - *.png and *.pdf: Screenshots and report visuals
 
