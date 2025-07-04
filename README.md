@@ -8,6 +8,8 @@ A command-line Python client that communicates via ZeroMQ to a microservice serv
 This repository contains my independent copy of a collaborative academic project completed as part of the
 Computer Science program.
 
+---
+
 ## Overview
 
 This microservice client was designed to:
@@ -58,7 +60,7 @@ _Fix***_
 ## How to Run the Client
 
 ### 1. Install Requirements
-
+```
 pip install -r requirements.txt
 ```
 
@@ -67,13 +69,12 @@ pip install -r requirements.txt
 Make sure the server microservice is running and listening on port `5555`. This project assumes the server is on `tcp://localhost:5555`.
 
 ### 3. Run the Client
-
-python microservice-client-zeromq.py
-
+```
+python client_zeromq_wsj_volume_query.py
+```
 ### 4. Run the Server in separate terminal
-
-python server_zeromq_wsj_volume_provider
-
+```
+python server_zeromq_wsj_volume_provider.py
 ```
 
 You’ll be presented with a command-line menu. Choose any of the options to retrieve and analyze stock volume data.
@@ -83,9 +84,10 @@ You’ll be presented with a command-line menu. Choose any of the options to ret
 ## File Structure
 
 - microservice-client-zeromq/
-  - microservice-client-zeromq.py       # Main client CLI application (renamed from prompt_030824_v03.py)
-  - requirements.txt                    # Project dependencies
-  - README.md                           # Project overview and instructions
+  - client_zeromq_wsj_volume_query.py    # Main client CLI application (renamed from prompt_030824_v03.py)
+  - server_zeromq_wsj_volume_provider.py # server providing financial data
+  - requirements.txt                     # Project dependencies
+  - README.md                            # Project overview and instructions
   - docs/
     - *.png and *.pdf: Screenshots and report visuals
 
@@ -106,13 +108,12 @@ Example JSON Response:
   "advancingNASDAQ": "3,456,789",
   "decliningNASDAQ": "4,567,890"
 }
-```
+
+---
 
 ## Volume Percentage Calculation
 
-```
 Percentage = Advancing / (Advancing + Declining) * 100
-```
 
 Each calculation is shown clearly in the terminal with border highlights and color-coded values.
 
@@ -120,11 +121,9 @@ Each calculation is shown clearly in the terminal with border highlights and col
 
 ## Requirements
 
-```
-pyzmq
-questionary
-clint
-```
+- **pyzmq**
+- **questionary**
+- **clint**
 
 (Installed via `requirements.txt`)
 
@@ -133,4 +132,7 @@ clint
 ## Notes
 
 - The microservice server was provided externally and is not included in this repo.
-- This project was part of a larger collaboration where each team member wrote a client and a separate server for the other.
+
+## License
+
+This project is for demonstration and educational purposes. No affiliation with TheMealDB.
