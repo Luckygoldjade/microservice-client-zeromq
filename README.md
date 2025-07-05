@@ -1,6 +1,6 @@
-# Academic project completed in Winter 2024
+# Project Title: microservice-client-zeromq
 
-## Project Title: microservice-client-zeromq
+## Academic project completed in Winter 2024
 
 **WSJ Up/Down Volume Percentage Calculator (Client Microservice)**  
 A command-line Python client that communicates via ZeroMQ to a microservice server. It retrieves stock volume data from the Wall Street Journal website and calculates the Up and Down Volume percentages for both NYSE and NASDAQ.
@@ -38,9 +38,46 @@ personalized, independently maintained version created for portfolio and resume.
 
 ---
 
-## Demo
+## Screenshots
 
-_Fix***_
+- **Screenshots**:  
+
+
+
+## Demo Videos – Project Progression
+
+This section showcases the development of the microservice system through progressive demo stages:
+
+- **Stage 1** – [Client Prompt and User Interaction (Video)](https://youtu.be/link-to-stage1)  
+  Demonstrates the interactive command-line interface where users select volume percentage options (NYSE/NASDAQ Up/Down).
+
+- **Stage 2** – [Server Scraping and JSON Response (Video)](https://youtu.be/link-to-stage2)  
+  Shows the server microservice scraping live stock volume data from the *Wall Street Journal* and returning structured JSON responses.
+
+- **Stage 3** – [Full Client-Server Integration with Live Data (Video)](https://youtu.be/7M-taMOrDU0)  
+  Highlights the complete system running in two separate terminal windows, communicating in real time using ZeroMQ.
+
+---
+
+### Final Integrated Demo (Stage 3)
+
+The Stage 3 video demonstrates a fully functional microservice system built with **Python** and **ZeroMQ** for asynchronous client-server messaging.
+
+- **Client**  
+  Interactive CLI that allows users to select from NYSE/NASDAQ Up or Down Volume options. Sends requests over ZeroMQ and displays results based on server response.
+
+- **Server**  
+  Retrieves live data from the *Wall Street Journal* using **Selenium**. Processes and returns stock volume data in JSON format.
+
+#### What's Shown in the Video:
+- Launching server and client in separate terminals  
+- User interacting with the CLI prompt  
+- Live financial data being scraped and returned as JSON  
+- Real-time calculation and display of volume percentages
+
+---
+
+> **Watch the final integrated demo:** [Stage 3 – Full System Integration (Video)](https://youtu.be/7M-taMOrDU0)
 
 ---
 
@@ -57,39 +94,54 @@ _Fix***_
 
 ---
 
-## How to Run the Client
+## How to Run
 
-### 1. Install Requirements
-```
+### 1. Install Dependencies
+
+Run the following command in your terminal to install all required Python packages:
+
+```bash
 pip install -r requirements.txt
 ```
 
-### 2. Start the Client in separate terminal
+---
 
-Make sure the server microservice is running and listening on port `5555`. This project assumes the server is on `tcp://localhost:5555`.
+### 2. Start the Server (in a separate terminal)
 
-### 3. Run the Client
-```
-python client_zeromq_wsj_volume_query.py
-```
-### 4. Run the Server in separate terminal
-```
+The server uses Selenium to scrape stock volume data from the Wall Street Journal and sends the data via ZeroMQ:
+
+```bash
 python server_zeromq_wsj_volume_provider.py
 ```
 
-You’ll be presented with a command-line menu. Choose any of the options to retrieve and analyze stock volume data.
+> The server listens on `tcp://localhost:5555` by default.
+
+---
+
+### 3. Start the Client (in another terminal)
+
+The client is a CLI app that connects to the server via ZeroMQ and displays real-time NYSE/NASDAQ volume percentage data:
+
+```bash
+python client_zeromq_wsj_volume_query.py
+```
+
+You’ll be prompted with an interactive menu to select from Up/Down Volume options for NYSE and NASDAQ.
 
 ---
 
 ## File Structure
 
-- microservice-client-zeromq/
-  - client_zeromq_wsj_volume_query.py    # Main client CLI application (renamed from prompt_030824_v03.py)
-  - server_zeromq_wsj_volume_provider.py # server providing financial data
-  - requirements.txt                     # Project dependencies
-  - README.md                            # Project overview and instructions
-  - docs/
-    - *.png and *.pdf: Screenshots and report visuals
+```markdown
+microservice-client-zeromq/
+- client_zeromq_wsj_volume_query.py     # Main CLI client (formerly prompt_030824_v03.py)
+- server_zeromq_wsj_volume_provider.py  # WSJ scraping server using Selenium
+- requirements.txt                      # Python dependencies for both client and server
+- README.md                             # Project documentation and instructions
+- docs/
+  - screenshots/                        # Interface and result screenshots (for README and report)
+  - *.pdf                               # Report or design documents
+```
 
 ---
 
