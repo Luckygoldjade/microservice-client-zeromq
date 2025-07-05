@@ -38,9 +38,51 @@ personalized, independently maintained version created for portfolio and resume.
 
 ---
 
-## Demo
+## Screenshots and Demo
 
-_Fix***_
+- **Screenshots**:  
+
+
+
+## Demo Videos – Project Progression
+
+This section showcases the development of the microservice system through progressive demo stages:
+
+- **Stage 1** – [Client Prompt and User Interaction (Video)](https://youtu.be/link-to-stage1)  
+  Demonstrates the interactive command-line interface where users select volume percentage options (NYSE/NASDAQ Up/Down).
+
+- **Stage 2** – [Server Scraping and JSON Response (Video)](https://youtu.be/link-to-stage2)  
+  Shows the server microservice scraping live stock volume data from the *Wall Street Journal* and returning structured JSON responses.
+
+- **Stage 3** – [Full Client-Server Integration with Live Data (Video)](https://youtu.be/7M-taMOrDU0)  
+  Highlights the complete system running in two separate terminal windows, communicating in real time using ZeroMQ.
+
+---
+
+### Final Integrated Demo (Stage 3)
+
+The Stage 3 video demonstrates a fully functional microservice system built with **Python** and **ZeroMQ** for asynchronous client-server messaging.
+
+- **Client**  
+  Interactive CLI that allows users to select from NYSE/NASDAQ Up or Down Volume options. Sends requests over ZeroMQ and displays results based on server response.
+
+- **Server**  
+  Retrieves live data from the *Wall Street Journal* using **Selenium**. Processes and returns stock volume data in JSON format.
+
+#### What's Shown in the Video:
+- Launching server and client in separate terminals  
+- User interacting with the CLI prompt  
+- Live financial data being scraped and returned as JSON  
+- Real-time calculation and display of volume percentages
+
+---
+
+> **Watch the final integrated demo:** [Stage 3 – Full System Integration (Video)](https://youtu.be/7M-taMOrDU0)
+
+
+
+
+
 
 ---
 
