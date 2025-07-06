@@ -48,10 +48,10 @@ personalized, independently maintained version created for portfolio and resume.
 
 This section showcases the development of the microservice system through progressive demo stages:
 
-- **Stage 1** – [Client Prompt and User Interaction (Video)](https://youtu.be/link-to-stage1)  
+- **Stage 1** – [Client Prompt and User Interaction (Video)](https://youtu.be/yz9epsfDPJQ)  
   Demonstrates the interactive command-line interface where users select volume percentage options (NYSE/NASDAQ Up/Down).
 
-- **Stage 2** – [Server Scraping and JSON Response (Video)](https://youtu.be/link-to-stage2)  
+- **Stage 2** – [Server Scraping and JSON Response (Video)](https://youtu.be/Yt8J8iD2Uoo)  
   Shows the server microservice scraping live stock volume data from the *Wall Street Journal* and returning structured JSON responses.
 
 - **Stage 3** – [Full Client-Server Integration with Live Data (Video)](https://youtu.be/7M-taMOrDU0)  
