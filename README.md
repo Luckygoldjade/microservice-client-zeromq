@@ -41,8 +41,22 @@ personalized, independently maintained version created for portfolio and resume.
 ## Screenshots
 
 - **Screenshots**:  
+This section showcases the visual components and validation results from the microservice project.
 
+- **User Interface Menu (Client Side)**  
+  ![User Interface](docs/screenshots/assign_12_User_interface_menu_(from_client_side)_070725_v01.png)
 
+- **Wall Street Journal Data (Server Side)**  
+  ![WSJ Data](docs/screenshots/assign_12_Wall_Street_Journal_data_(from_server_side)_070725_v02.png)
+
+- **Terminal Output – NYSE Results**  
+  [View Screenshot](docs/screenshots/assign_12_Terminal_output_showing_results_NYSE_070725_v03.png)
+
+- **Terminal Output – Nasdaq Results**  
+  [View Screenshot](docs/screenshots/assign_12_Terminal_output_showing_results_Nasdaq_070725_v04.png)
+
+- **Comparison Against Walter Deemer Metrics**  
+  [View Screenshot](docs/screenshots/assign_12_Output_comparison_against_Walter_Deemer_metrics_070725_v05.png)
 
 ## Demo Videos – Project Progression
 
@@ -78,7 +92,7 @@ The Stage 3 video demonstrates a fully functional microservice system built with
 ---
 
 > **Watch the final integrated demo:** [Stage 3 – Full System Integration (Video)](https://youtu.be/7M-taMOrDU0)
-
+Demonstrates real-time interaction between a Python client and server using ZeroMQ. The client queries financial data, while the server scrapes the Wall Street Journal and responds with JSON. Features include CLI prompts, live data scraping, and percentage calculations.
 ---
 
 ## Features
