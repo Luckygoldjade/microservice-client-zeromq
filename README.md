@@ -1,4 +1,4 @@
-# Project Title: microservice-client-zeromq
+# Project: microservice-client-zeromq
 
 ## Academic project completed in Winter 2024
 
@@ -208,7 +208,7 @@ Each calculation is shown clearly in the terminal with border highlights and col
 
 ## Notes
 
-- The microservice server was provided externally and is not included in this repo.
+- The server_zeromq_wsj_volume_provider.py server was provided externally and is included in this repo.
 
 ## License
 
