@@ -1,4 +1,4 @@
-# Project Title: microservice-client-zeromq
+# Project: microservice-client-zeromq
 
 ## Academic project completed in Winter 2024
 
@@ -57,6 +57,17 @@ This section showcases the visual components and validation results from the mic
 
 - **Comparison Against Walter Deemer Metrics**  
   [View Screenshot](docs/screenshots/assign_12_Output_comparison_against_Walter_Deemer_metrics_070725_v05.png)
+
+---
+
+## Design Documentation
+
+This project began with a user-centered design process following Inclusivity Heuristics.  
+The document outlines initial UI planning, user interaction flow, and accessibility considerations for the CLI interface.
+
+[View Design UI Plan with Inclusivity Heuristics (PDF)](docs/design_ui_plan_inclusivity_heuristics.pdf)
+
+---
 
 ## Demo Videos – Project Progression
 
@@ -197,7 +208,7 @@ Each calculation is shown clearly in the terminal with border highlights and col
 
 ## Notes
 
-- The microservice server was provided externally and is not included in this repo.
+- The server_zeromq_wsj_volume_provider.py server was provided externally and is included in this repo.
 
 ## License
 
